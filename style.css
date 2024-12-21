@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: #ffffff;
+    color: #000000;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  body.dark-mode {
+    background: #121212;
+    color: #ffffff;
+  }
+  
+  #header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #f4f4f4;
+  }
+  
+  body.dark-mode #header {
+    background: #1f1f1f;
+  }
+  
+  #chat-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    overflow-y: auto;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  body.dark-mode #chat-container {
+    border-bottom: 1px solid #444;
+  }
+  
+  .chat-message {
+    margin-bottom: 10px;
+  }
+  
+  .chat-message .username {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  #input-container {
+    display: flex;
+    padding: 10px;
+    background: #f4f4f4;
+  }
+  
+  body.dark-mode #input-container {
+    background: #1f1f1f;
+  }
+  
+  #username-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  #username-display {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  #options-container {
+    position: relative;
+  }
+  
+  #options-button {
+    padding: 5px 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #options-button:hover {
+    background: #0056b3;
+  }
+  
+  #options-dropdown {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+  }
+  
+  body.dark-mode #options-dropdown {
+    background: #1f1f1f;
+    border: 1px solid #444;
+  }
+  
+  #options-dropdown button {
+    padding: 10px;
+    background: none;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+  }
+  
+  #options-dropdown button:hover {
+    background: #f4f4f4;
+  }
+  
+  body.dark-mode #options-dropdown button:hover {
+    background: #333;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
